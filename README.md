@@ -6,5 +6,3 @@ Dependencies:
   -  file manager: thunar
   -  bar: waybar
   -  app-launcher: rofi
-
-![Uploading 2025-04-17-195027_hyprshot.png…]()
