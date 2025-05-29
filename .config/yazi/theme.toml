@@ -1,0 +1,560 @@
+[manager]
+cwd = { fg = "#ff0000" }
+
+# Hovered
+hovered         = { fg = "#000000", bg = "#ff0000" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#eed49f", italic = true }
+find_position = { fg = "#f5bde6", bg = "reset", italic = true }
+
+# Marker
+marker_copied   = { fg = "#a6da95", bg = "#a6da95" }
+marker_cut      = { fg = "#ed8796", bg = "#ed8796" }
+marker_marked   = { fg = "#94e2d5", bg = "#94e2d5" }
+marker_selected = { fg = "#8aadf4", bg = "#8aadf4" }
+
+# Tab
+tab_active   = { fg = "#24273a", bg = "#cad3f5" }
+tab_inactive = { fg = "#cad3f5", bg = "#494d64" }
+tab_width    = 1
+
+# Count
+count_copied   = { fg = "#24273a", bg = "#a6da95" }
+count_cut      = { fg = "#24273a", bg = "#ed8796" }
+count_selected = { fg = "#24273a", bg = "#8aadf4" }
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#dddddd" }
+
+# Highlighting
+syntect_theme = "~/.config/yazi/Catppuccin-macchiato.tmTheme"
+
+[mode]
+normal_main = { fg = "#000000", bg = "#990000", bold = true }
+normal_alt  = { fg = "#000000", bg = "#990000"}
+
+select_main = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
+select_alt  = { fg = "#a6e3a1", bg = "#313244"}
+
+unset_main  = { fg = "#1e1e2e", bg = "#f2cdcd", bold = true }
+unset_alt   = { fg = "#f2cdcd", bg = "#313244"}
+
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#660000", bg = "#660000" }
+
+# Progress
+progress_label  = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#660000", bg = "#000000" }
+progress_error  = { fg = "#660000", bg = "#000000" }
+
+perm_type  = { fg = "#333333" }
+perm_read  = { fg = "#666666" }
+perm_write = { fg = "#999999" }
+perm_exec  = { fg = "#cccccc" }
+perm_sep   = { fg = "#ffffff" }
+
+[input]
+border   = { fg = "#660000" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[pick]
+border   = { fg = "#660000" }
+active   = { fg = "#660000" }
+inactive = {}
+
+[confirm]
+border     = { fg = "#660000" }
+title      = { fg = "#660000" }
+content    = {}
+list       = {}
+btn_yes    = { reversed = true }
+btn_no     = {}
+
+[completion]
+border = { fg = "#660000" }
+
+[select]
+border   = { fg = "#660000" }
+active   = { fg = "#660000" }
+inactive = {}
+
+[tasks]
+border  = { fg = "#660000" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "#363a4f" }
+cand            = { fg = "#8bd5ca" }
+rest            = { fg = "#939ab7" }
+desc            = { fg = "#f5bde6" }
+separator       = "  "
+separator_style = { fg = "#5b6078" }
+
+[help]
+on      = { fg = "#f5bde6" }
+exec    = { fg = "#8bd5ca" }
+desc    = { fg = "#939ab7" }
+hovered = { bg = "#5b6078", bold = true }
+footer  = { fg = "#494d64", bg = "#cad3f5" }
+
+[filetype]
+
+rules = [
+	# Fallback
+	{ name = "*", fg = "#880000" },
+	{ name = "*/", fg = "#ee0000" }
+]
+
+[icon]
+
+files = [
+  { name = ".bash_profile", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = ".bashrc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = ".gitconfig", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = ".gtkrc-2.0", text = "", fg_dark = "#880000", fg_light = "#880000" },
+
+]
+
+exts = [
+  { name = "rake", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "skp", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "eln", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "razor", text = "󱦘", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vue", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sln", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "el", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "blp", text = "󰺾", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mdx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ml", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "less", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pot", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mli", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gif", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "aif", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cxxm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcbak", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "aac", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "query", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "android", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "m3u8", text = "󰲹", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "leex", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "liquid", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cue", text = "󰲹", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcmacro", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "log", text = "󰌱", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "brep", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "blend", text = "󰂫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "md5", text = "󰕥", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sql", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xcplayground", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "erb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "t", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cache", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "r", text = "󰟔", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "x", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "import", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "m", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lrc", text = "󰨖", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "o", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "d", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "c", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "h", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rss", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hbs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "godot", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "eot", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "awk", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "a", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pyi", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "asc", text = "󰦝", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ass", text = "󰨖", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "css", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "psb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "csproj", text = "󰪮", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "csv", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gcode", text = "󰐫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ics", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mk", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bz", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fctb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gz", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wasm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "glb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "elc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "flf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "elf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dropbox", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tres", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "apk", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ape", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "slvs", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "apl", text = "⍝", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cs", text = "󰌛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "azcli", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "flc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gemspec", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pls", text = "󰲹", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cfg", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcscript", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gnumakefile", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "zst", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pxi", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "woff2", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_pcb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "zsh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_wks", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "info", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cppm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "svg", text = "󰜡", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "flac", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cuh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bin", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "zig", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "yml", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "yaml", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fsscript", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xz", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "diff", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mojo", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cshtml", text = "󱦗", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bak", text = "󰁯", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "nfo", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bat", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cpy", text = "⚙", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gql", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "c++", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lff", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "obj", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sha512", text = "󰕥", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "scm", text = "󰘧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "aiff", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sig", text = "λ", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "webm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "zip", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wrz", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jwmrc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xml", text = "󰗀", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cbl", text = "⚙", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rmd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xaml", text = "󰙳", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wvc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "drl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "erl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "3gp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ccm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ino", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kbx", text = "󰯄", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "test.js", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wrl", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pcm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "woff", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "scala", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "webpack", text = "󰜫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hrl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kra", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_pro", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bazel", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "toml", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "iges", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "crdownload", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "so", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "strings", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xls", text = "󰈛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wav", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vsix", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_prl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mov", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bash", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sqlite3", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vsh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vim", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lck", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "go", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pyo", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vhdl", text = "󰍛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vhd", text = "󰍛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rar", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "magnet", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vala", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "coffee", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kdbx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "po", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "v", text = "󰍛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "prisma", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "f90", text = "󱈚", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "txt", text = "󰈙", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mo", text = "∞", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mp4", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cljc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "heex", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "exs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "clj", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "luau", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcparam", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "markdown", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dxf", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "luac", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "desktop", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "docx", text = "󰈬", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cljd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "txz", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bicepparam", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kt", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcstd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "md", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "edn", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sub", text = "󰨖", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ttf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hurl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dll", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lhs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tsconfig", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "msf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rproj", text = "󰗆", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "org", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "signature", text = "λ", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "elm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pyc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tmux", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tgz", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "nu", text = ">", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tfvars", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lua", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "astro", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lib", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tex", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ogg", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "stp", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sublime", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "test.tsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "nswag", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "test.ts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "test.jsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dwg", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bib", text = "󱉟", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sass", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "templ", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tcl", text = "󰛓", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pck", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "swift", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "makefile", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xcstrings", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "slim", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "iso", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fsi", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dart", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "nix", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "svelte", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sv", text = "󰍛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bz2", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sha256", text = "󰕥", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "twig", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "material", text = "󰔉", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ppt", text = "󰈧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pyd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "step", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "webmanifest", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_sch", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cjs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "stl", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ejs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ssa", text = "󰨖", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "license", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jsonc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "download", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ige", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sqlite", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "psd1", text = "󰨊", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dump", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "resi", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "spec.ts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fnl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cu", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "scss", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "config.ru", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "psd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "db", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "epub", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "haml", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sol", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sml", text = "λ", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "svh", text = "󰍛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sldprt", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ico", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xlsx", text = "󰈛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dconf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bz3", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fdmdownload", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "patch", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xcf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "js", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pyw", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sha384", text = "󰕥", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcmat", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "csh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "suo", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sha224", text = "󰕥", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sha1", text = "󰕥", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cr", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "huff", text = "󰡘", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ksh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wma", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mp3", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "conf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "3mf", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sbt", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_mod", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "terminal", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rlib", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pdf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kdenlive", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "spec.tsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "res", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hxx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "rb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "vh", text = "󰍛", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ixx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cson", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "7z", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ex", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cpp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "qss", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "app", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jxl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "qrc", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "qml", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "epp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "otf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hh", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "qm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pro", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "exe", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kdenlivetitle", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kdb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mpp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "Dockerfile", text = "󰡨", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bqn", text = "⎉", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "torrent", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "m3u", text = "󰲹", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "py", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pxd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "f3d", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "out", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "spec.jsx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_dru", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ps1", text = "󰨊", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ui", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "styl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "f#", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "png", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ply", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "php", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "eex", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tbc", text = "󰛓", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "part", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pub", text = "󰷖", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ipynb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "opus", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "git", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bmp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "blade.php", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "nim", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xpi", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mustache", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tscn", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "scad", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ai", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hex", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "hpp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "xul", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mobi", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fcstd1", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ical", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "icalendar", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bicep", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mkv", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "graphql", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mjs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "mint", text = "󰌪", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "m4v", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "m4a", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "tf", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gv", text = "󱁉", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "lock", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "krz", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kpp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ko", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "kicad_sym", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "psm1", text = "󰨊", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "pyx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "json5", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "json", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "bzl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ifb", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "image", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jpg", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "jpeg", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "java", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "wv", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ini", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cast", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fctl", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ifc", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "sldasm", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "html", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "typoscript", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "🔥", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "htm", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ste", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "spec.js", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gresource", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "ebook", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gradle", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "gd", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fish", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "igs", text = "󰻫", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "fbx", text = "󰆧", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "env", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "srt", text = "󰨖", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "dot", text = "󱁉", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "doc", text = "󰈬", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "d.ts", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "applescript", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cxx", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "img", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cljs", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cobol", text = "⚙", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cob", text = "⚙", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "cmake", text = "", fg_dark = "#880000", fg_light = "#880000" },
+  { name = "webp", text = "", fg_dark = "#880000", fg_light = "#880000" },
+]

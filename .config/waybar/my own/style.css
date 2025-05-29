@@ -1,0 +1,123 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding: 0px 0px 0px 3px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+window#waybar {
+    border-radius: 3px;
+    background-color: transparent;
+    border-bottom: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: transparent;
+}
+
+#workspaces button {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  transition: none;
+  min-width: 25px;
+}
+
+
+#workspaces button:hover {
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  text-shadow: none;
+  transition: none;
+}
+
+#workspaces {
+  background-color: #32302f;
+  color: #ff0000;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 15px 3px 15px;
+  border-radius: 8px;
+  opacity: 1;
+  border: 3px solid #ff0000;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+#tray {
+  background-color: #32302f;
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 5px 3px 0px;
+  border-radius: 8px;
+  opacity: 1;
+  border: 3px solid #ff0000;
+}
+
+#clock {
+  background-color: #32302f;
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 0px 3px 15px;
+  border-radius: 8px;
+  opacity: 1;
+  border: 3px solid #ff0000;
+}
+
+#clock#clock {
+  background-color: #32302f;
+  color: #ffffff;
+  padding: 0px 10px 0px 10px;
+  margin: 3px 5px 3px 5px;
+  border-radius: 8px;
+  opacity: 1;
+  border: 3px solid #ff0000;
+}
+
+#pulseaudio {
+  background-color: #32302f;
+  color: #ffffff;
+  padding: 0px 13px 0px 10px;
+  margin: 3px 5px 3px 5px;
+  border-radius: 8px;
+  opacity: 1;
+  border: 3px solid #ff0000;
+}
+
+#custom-arch { /*done*/
+  background-color: #32302f;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 0px 14px 0px 10px;
+  margin: 3px 5px 3px 5px;
+  border-radius: 8px;
+  opacity: 1;
+  border: 3px solid #ff0000;
+}
+
+tooltip {
+    background-color: rgba(50, 48, 47, 0.9);
+    padding: 6px;
+    border-radius: 8px;
+}
+
